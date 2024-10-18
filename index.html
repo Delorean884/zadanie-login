@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, purple, #00c6ff);
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(6px);
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 8px 32px 0  white;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-container input {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 16px;
+            box-shadow: inset 0 4px 6px white;
+        }
+
+        .login-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .login-container button {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 15px;
+            padding: 15px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: inset 0 4px 6px rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <input type="text" placeholder="User" required>
+        <input type="password" placeholder="Password" required>
+        <a href="https://www.youtube.com/feed">
+<button>Login</button>
+    </div>
+</body>
+</html>
